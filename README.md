@@ -195,7 +195,7 @@ In the “**Function code**” panel, select “**Upload a file from Amazon S3**
 
 Change the text in the “**Handler**” box to “**main.copy**”.
 
-Enter “**s3:/mediademo-public/copy-assets-function.zip**” in the “**Amazon S3 link URL**” box.
+Enter “**s3://mediademo-public/copy-assets-function.zip**” in the “**Amazon S3 link URL**” box.
 
 ![Image](media/Picture35.png)
 
