@@ -418,7 +418,7 @@ Expand “**Advanced container configuration**”.
 
 Under the “**Environment**” heading you'll find a section for “**Environment Variables**”.  Enter the following into the boxes replacing the URL and the Key with the items specific to you from the previous steps.  Use the screenshot below as a reference.
 
-* “**SGW_DEMO_API_URL**”: Value: “**<YOUR_INVOKE_URL>/copy-assets**”
+* “**SGW_DEMO_API_URL**”: Value: “**YOUR_INVOKE_URL/copy-assets**”
     * **(WARNING: The trailing text in the URL MUST match that of the resource in API Gateway.  If you’ve changed the name from ‘copy-assets’, ensure it’s set correctly here.  Mismatched resources generate errors in the UI that are notoriously difficult to trace.)**
 * “**SGW_DEMO_API_KEY**”: Value: “**<YOUR_API_KEY>**”
 
