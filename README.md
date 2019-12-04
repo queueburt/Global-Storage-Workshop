@@ -263,6 +263,8 @@ From the drop-down select “**POST**” and click the check-mark next to it.
 
 In the subsequent “**POST - Setup**” screen, click the check-box next to “**Use Lambda Proxy Integration**”.
 
+**(WARNING: Make sure to check the Proxy Integration box!  Your test in the subsequent steps will fail with a KeyError otherwise.)**
+
 In the “**Lambda Function**” box enter the name of the Lambda function you created.  It should be “**copy-assets**” unless you happened to change the name.
 
 ![Image](media/Picture49.png)
@@ -418,7 +420,7 @@ Expand “**Advanced container configuration**”.
 
 Under the “**Environment**” heading you'll find a section for “**Environment Variables**”.  Enter the following into the boxes replacing the URL and the Key with the items specific to you from the previous steps.  Use the screenshot below as a reference.
 
-* “**SGW_DEMO_API_URL**”: Value: “**<YOUR_INVOKE_URL>/copy-assets**”
+* “**SGW_DEMO_API_URL**”: Value: “**&lt;YOUR_INVOKE_URL>/copy-assets**”
     * **(WARNING: The trailing text in the URL MUST match that of the resource in API Gateway.  If you’ve changed the name from ‘copy-assets’, ensure it’s set correctly here.  Mismatched resources generate errors in the UI that are notoriously difficult to trace.)**
 * “**SGW_DEMO_API_KEY**”: Value: “**<YOUR_API_KEY>**”
 
@@ -457,10 +459,10 @@ Copy the URL next to “**DNS name**”, open a new browser tab, and navigate to
 
 Let’s try our new UI in action!  Let’s do a test copy of a prefix from our master bucket to our studio.  Fill out the form with the following info and press “Copy Assets”.
 
-* **“Copy From Bucket”: **<your-bucket>-master (“*yourinitials-mymedia-master*” in our example)
-* **“Copy To Bucket”:** <your-bucket>-studio (“*yourinitials-mymedia-studio*“ in our example)
-* **“Share ID”: **<your-sgw-share-ID>
-* **“Enter S3 Prefix(s)”: **“Good Omens/S01E01/sq035/s13/“
+* **“Copy From Bucket”**: "**&lt;your-bucket>-master**" (“*yourinitials-mymedia-master*” in our example)
+* **“Copy To Bucket”**: "**&lt;your-bucket>-studio**" (“*yourinitials-mymedia-studio*“ in our example)
+* **“Share ID”**: **"&lt;your-sgw-share-ID>"**
+* **“Enter S3 Prefix(s)”**: **“Good Omens/S01E01/sq035/s13/“**
 
 
 ![Image](media/Picture78.png)
